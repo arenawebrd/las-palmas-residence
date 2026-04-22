@@ -28,14 +28,14 @@ const siteData = await getSiteData();
   <body class="min-h-screen">
     <slot />
     <a 
-      href={`https://wa.me/1${siteData.contact.phoneRaw}?text=Hola,%20me%20gustaria%20reservar`}
+      href={`https://wa.me/${siteData.contact.phoneRaw}?text=Hola,%20me%20gustaria%20reservar`}
       target="_blank"
       rel="noopener noreferrer"
       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl z-50 transition-transform hover:scale-110 flex items-center justify-center"
       aria-label="WhatsApp"
     >
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.06 2.113 3.164 4.963 4.01 7.554 1.209-1.594 1.698-3.507 1.355-5.336l-1.7-3.6c-.536-1.163-2.034-1.903-3.309-1.457l-4.933 1.892c-.678-.001-1.347-.001-2.017-.001-.005 2.986-.002 5.973.347 8.728l1.429 4.751c.242 1.01 1.217 1.727 2.248 1.727h1.768c3.682-2.703 8.373-8.08 8.373-8.08-.258-1.075-.442-2.211-.442-3.337 0-5.373-4.417-10.166-9.833-10.166-5.417 0-9.834 4.793-9.834 10.166 0 1.517.396 2.961 1.063 4.192l-1.286 4.797z"/>
       </svg>
     </a>
   </body>
