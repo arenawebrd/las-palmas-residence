@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Accommodations from '../components/Accommodations.astro';
+import Services from '../components/Services.astro';
+import Gallery from '../components/Gallery.astro';
+import Location from '../components/Location.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import { type Language } from '../data/site';
+
+const url = new URL(Astro.request.url);
+const langParam = url.searchParams.get('lang');
+const language: Language = (langParam === 'en' || langParam === 'es') ? langParam : 'es';
+---
+
+<Layout language={language}>
+  <Navbar language={language} />
+  <main>
+    <Hero language={language} />
+    <About language={language} />
+    <Accommodations language={language} />
+    <Services language={language} />
+    <Gallery language={language} />
+    <Location language={language} />
+    <Contact language={language} />
+  </main>
+  <Footer language={language} />
+</Layout>

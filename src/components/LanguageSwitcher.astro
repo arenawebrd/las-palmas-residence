@@ -1,0 +1,74 @@
+---
+import { type Language } from '../data/site';
+
+export interface Props {
+  language: Language;
+}
+
+const { language } = Astro.props;
+
+const languages = [
+  { code: 'es', name: 'Español', flag: 'es', path: '/' },
+  { code: 'en', name: 'English', flag: 'us', path: '/en/' }
+];
+
+const currentLang = languages.find(l => l.code === language);
+const otherLang = languages.find(l => l.code !== language);
+---
+
+<div class="relative" id="language-switcher">
+  <button
+    id="lang-btn"
+    class="flex items-center gap-2 px-3 py-1.5 rounded-full transition-all border lang-btn-transparent"
+  >
+    <span class={`fi fi-${currentLang?.flag} rounded-sm`}></span>
+    <span class="text-xs font-bold uppercase tracking-widest">{currentLang?.code}</span>
+    <svg class="w-3 h-3 transition-transform" id="lang-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+  <div id="lang-dropdown" class="hidden absolute right-0 mt-2 w-40 bg-white rounded-2xl shadow-xl border border-emerald-50 overflow-hidden z-20">
+    <a
+      href={otherLang?.path}
+      class="w-full flex items-center gap-3 px-4 py-3 text-sm transition-colors hover:bg-emerald-50 text-emerald-900"
+    >
+      <span class={`fi fi-${otherLang?.flag} rounded-sm`}></span>
+      <span>{otherLang?.name}</span>
+    </a>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById('lang-btn');
+  const dropdown = document.getElementById('lang-dropdown');
+  const chevron = document.getElementById('lang-chevron');
+
+  btn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    dropdown?.classList.toggle('hidden');
+    chevron?.classList.toggle('rotate-180');
+  });
+
+  document.addEventListener('click', () => {
+    dropdown?.classList.add('hidden');
+    chevron?.classList.remove('rotate-180');
+  });
+</script>
+
+<style>
+  .lang-btn-transparent {
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+  }
+  .lang-btn-transparent:hover {
+    background: rgba(255,255,255,0.1);
+  }
+  .lang-btn-scrolled {
+    border: 1px solid rgba(5, 150, 105, 0.2);
+    color: #065f46;
+  }
+  .lang-btn-scrolled:hover {
+    background: rgba(5, 150, 105, 0.1);
+  }
+</style>

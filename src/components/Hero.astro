@@ -1,0 +1,65 @@
+---
+import { getTranslations, getSiteData, type Language } from '../data/site';
+
+export interface Props {
+  language: Language;
+}
+
+const { language } = Astro.props;
+const t = await getTranslations(language);
+const siteData = await getSiteData();
+---
+
+<section class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+  <div class="absolute inset-0 z-0">
+    <img 
+      src={siteData.images.hero} 
+      alt={siteData.site.name} 
+      class="w-full h-full object-cover"
+      referrerpolicy="no-referrer"
+    />
+    <div class="absolute inset-0 bg-black/30" />
+  </div>
+
+  <div class="relative z-10 text-center px-6 max-w-3xl animate-fade-in">
+    <span class="text-white/80 text-sm font-medium mb-3 block">
+      {t.hero.welcome}
+    </span>
+    <h1 class="text-5xl md:text-7xl font-serif text-white mb-6 leading-tight">
+      {siteData.site.name} <span class="italic font-light">{siteData.site.tagline}</span>
+    </h1>
+    <p class="text-white/90 text-lg md:text-xl max-w-xl mx-auto mb-8 leading-relaxed">
+      {t.hero.subtitle}
+    </p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+      <a 
+        href="#alojamientos" 
+        class="bg-white text-emerald-900 px-8 py-3 rounded-full font-medium hover:bg-emerald-50 transition-all shadow-lg hover:shadow-xl"
+      >
+        {t.hero.viewRooms}
+      </a>
+      <a 
+        href="#hotel" 
+        class="bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-3 rounded-full font-medium hover:bg-white/20 transition-all"
+      >
+        {t.hero.discover}
+      </a>
+    </div>
+  </div>
+
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/40 animate-bounce">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+    </svg>
+  </div>
+</section>
+
+<style>
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+</style>

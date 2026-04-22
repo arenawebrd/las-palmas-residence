@@ -1,0 +1,110 @@
+---
+import { getTranslations, getSiteData, type Language } from '../data/site';
+
+export interface Props {
+  language: Language;
+}
+
+const { language } = Astro.props;
+const t = await getTranslations(language);
+const siteData = await getSiteData();
+
+const roomImages = siteData.roomImages.slice(0, 6);
+const room = t.roomsList[0];
+
+const amenityCategories = [
+  {
+    title: language === 'es' ? 'General' : 'General',
+    items: room.amenities.filter((a: string) => ['Ventiladores en todas las estancias', 'Caja fuerte', 'Terraza', 'Zona de estar', 'Armario', 'Suelo de baldosa/mármol', 'Muebles de exterior', 'Mosquitera', 'Ventilator', 'Safe', 'Terrace', 'Living area', 'Wardrobe'].includes(a))
+  },
+  {
+    title: language === 'es' ? 'Baño' : 'Bathroom',
+    items: room.amenities.filter((a: string) => ['Baño', 'Ducha', 'Toallas', 'Artículos de baño gratis', 'Bidé', 'Aseos', 'Productos de limpieza', 'Jabón para el cuerpo', 'Champú', 'Papel higiénico', 'Bathroom', 'Shower', 'Towels', 'Free toiletries', 'Bidet', 'Toilets', 'Cleaning products', 'Body soap', 'Shampoo', 'Toilet paper'].includes(a))
+  },
+  {
+    title: language === 'es' ? 'Dormitorio' : 'Bedroom',
+    items: room.amenities.filter((a: string) => ['Cunas (bajo demanda)', 'Ropa de cama', 'Cribs', 'Bed linen'].includes(a))
+  },
+  {
+    title: language === 'es' ? 'Salón y Comedor' : 'Living & Dining',
+    items: room.amenities.filter((a: string) => ['Sofá', 'Zona de comedor', 'Cocina americana', 'Cocina', 'Sofa', 'Dining area', 'Kitchenette', 'Kitchen'].includes(a))
+  },
+  {
+    title: language === 'es' ? 'Electrodomésticos' : 'Appliances',
+    items: room.amenities.filter((a: string) => ['Frigorífico', 'Utensilios de cocina', 'Hornillo', 'TV de pantalla plana', 'Enchufe cerca de cama', 'Refrigerator', 'Kitchen utensils', 'Stove', 'Flat-screen TV', 'Socket near bed'].includes(a))
+  },
+  {
+    title: language === 'es' ? 'Seguridad' : 'Safety',
+    items: room.amenities.filter((a: string) => ['Acceso a pisos superiores sólo mediante escaleras', 'Extintor de incendios', 'Llave en mano', 'Access to upper floors only by stairs', 'Fire extinguisher'].includes(a))
+  }
+];
+---
+
+<section id="alojamientos" class="py-24 px-6 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-emerald-700 uppercase tracking-widest text-sm font-bold mb-4 block">
+        {t.rooms.tag}
+      </span>
+      <h2 class="text-5xl md:text-6xl font-serif text-emerald-950 mb-4">
+        {t.rooms.title} <span class="italic">{t.rooms.titleItalic}</span>
+      </h2>
+      <p class="text-emerald-900/60 max-w-2xl mx-auto text-lg">
+        {t.rooms.desc}
+      </p>
+    </div>
+
+    <div class="max-w-6xl mx-auto space-y-10">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {roomImages.map((image: string, idx: number) => (
+          <div class={`relative aspect-square rounded-2xl overflow-hidden shadow-lg`}>
+            <img 
+              src={image} 
+              alt={`Villa ${idx + 1}`}
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+        ))}
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div class="space-y-6">
+          <div>
+            <div class="flex flex-wrap gap-3 mb-4">
+              <span class="bg-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-bold">
+                {room.size}
+              </span>
+              <span class="bg-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-sm">
+                {room.bed}
+              </span>
+            </div>
+            <p class="text-emerald-900/70 leading-relaxed text-lg">
+              {room.description}
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <h4 class="font-bold text-emerald-950 uppercase tracking-widest">{t.rooms.amenities}</h4>
+          
+          {amenityCategories.filter(c => c.items.length > 0).map((category) => (
+            <div>
+              <h5 class="text-emerald-700 font-semibold mb-3">{category.title}</h5>
+              <div class="grid grid-cols-2 gap-x-4 gap-y-3">
+                {category.items.map((item: string) => (
+                  <div class="flex items-center gap-3 text-emerald-900/70">
+                    <svg class="w-5 h-5 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

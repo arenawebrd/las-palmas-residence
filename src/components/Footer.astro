@@ -1,0 +1,37 @@
+---
+import { getTranslations, getSiteData, type Language } from '../data/site';
+
+export interface Props {
+  language: Language;
+}
+
+const { language } = Astro.props;
+const t = await getTranslations(language);
+const siteData = await getSiteData();
+---
+
+<footer class="bg-emerald-950 text-white py-12 px-6 border-t border-white/5">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+    <div class="flex items-center gap-2">
+      <svg class="w-6 h-6 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4"/>
+        <path d="M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-3l-1-1-1 1h-3"/>
+        <path d="M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35z"/>
+        <path d="M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14"/>
+        <path d="M13 19c2.5 0 3.5-1 5-2"/>
+      </svg>
+      <span class="font-serif text-lg font-bold">
+        {siteData.site.name} <span class="font-light italic">{siteData.site.tagline}</span>
+      </span>
+    </div>
+    
+    <div class="text-white/40">
+      © {new Date().getFullYear()} {siteData.site.name}. {t.footer.rights}
+    </div>
+    
+    <div class="flex gap-8 text-sm uppercase tracking-widest font-bold">
+      <a href="#" class="hover:text-emerald-400 transition-colors">{t.footer.privacy}</a>
+      <a href="#" class="hover:text-emerald-400 transition-colors">{t.footer.terms}</a>
+    </div>
+  </div>
+</footer>

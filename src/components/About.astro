@@ -1,0 +1,79 @@
+---
+import { getTranslations, getSiteData, type Language } from '../data/site';
+
+export interface Props {
+  language: Language;
+}
+
+const { language } = Astro.props;
+const t = await getTranslations(language);
+const siteData = await getSiteData();
+---
+
+<section id="hotel" class="py-20 px-6 bg-white">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div class="relative animate-slide-left">
+      <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
+        <img 
+          src={siteData.images.about} 
+          alt={siteData.site.name} 
+          class="w-full h-full object-cover"
+          referrerpolicy="no-referrer"
+        />
+      </div>
+      <div class="absolute -bottom-6 -right-6 bg-emerald-800 text-white p-6 rounded-2xl hidden lg:block shadow-lg max-w-xs">
+        <div class="flex items-center gap-2 mb-3">
+          <svg class="w-4 h-4 fill-yellow-400 text-yellow-400" viewBox="0 0 24 24">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          <span class="font-bold text-xl">{siteData.ratings.booking.score}</span>
+          <span class="text-sm opacity-80">/ {siteData.ratings.booking.maxScore}</span>
+        </div>
+        <p class="text-sm font-light leading-relaxed">
+          "{t.about.review}"
+        </p>
+        <div class="mt-3 text-xs font-medium opacity-60">
+          {siteData.ratings.booking.source}
+        </div>
+      </div>
+    </div>
+
+    <div class="animate-slide-right">
+      <h2 class="text-4xl md:text-5xl font-serif text-emerald-950 mb-6 leading-tight">
+        {t.about.title} <span class="italic">{t.about.subtitle}</span>
+      </h2>
+      <div class="space-y-5 text-lg text-emerald-900/70 leading-relaxed">
+        <p>{t.about.p1}</p>
+        <p>{t.about.p2}</p>
+      </div>
+      
+      <div class="grid grid-cols-2 gap-6 mt-8">
+        <div class="bg-emerald-50 p-4 rounded-xl">
+          <div class="text-2xl font-serif text-emerald-900 mb-1">{siteData.stats.beachDistance}</div>
+          <div class="text-sm text-emerald-700 font-medium">{t.about.stat1}</div>
+        </div>
+        <div class="bg-emerald-50 p-4 rounded-xl">
+          <div class="text-2xl font-serif text-emerald-900 mb-1">{siteData.stats.villageDistance}</div>
+          <div class="text-sm text-emerald-700 font-medium">{t.about.stat2}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes slide-left {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes slide-right {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  .animate-slide-left {
+    animation: slide-left 0.8s ease-out forwards;
+  }
+  .animate-slide-right {
+    animation: slide-right 0.8s ease-out forwards;
+  }
+</style>

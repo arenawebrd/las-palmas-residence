@@ -1,0 +1,201 @@
+{
+  "es": {
+    "nav": {
+      "hotel": "El Hotel",
+      "rooms": "Alojamientos",
+      "services": "Servicios",
+      "gallery": "Galería",
+      "location": "Ubicación",
+      "contact": "Contacto",
+      "book": "Reservar",
+      "bookNow": "Reservar Ahora"
+    },
+    "hero": {
+      "welcome": "Bienvenidos al Paraíso en Las Terrenas",
+      "subtitle": "Villas exclusivas donde la clama, la naturaleza y el confort se encuentran al lado del mar. Aquí cada amanecer inspira y cada atardecer confirma que elegiste el lugar perfecto para tus vacaciones.",
+      "viewRooms": "Ver Alojamientos",
+      "discover": "Descubrir Más"
+    },
+    "about": {
+      "title": "Un Oasis de Paz en el",
+      "subtitle": "Corazón de Samaná",
+      "p1": "Ubicado en el centro de la playa de Las Terrenas entre el pueblo de pescadores y Punta Popy, Las Palmas Eco Residence es más que un residencial; es una experiencia en el corazón del Caribe. A tan solo 2 minutos a pie de la Playa, ofrecemos un refugio donde la tranquilidad y la comodidad se encuentran.",
+      "p2": "Nuestras Villas cuentan con 2 habitaciones con baño propio, salón comedor con TV cocina abierta y terraza con mobiliario exterior rodeada de exuberante vegetación que proporciona a la casa una hermosa intimidad, las  instalaciones comunitarias cuenta con zona ajardinada y zonas de barbacoa diseñadas para crear momentos inolvidables con familia y amigos.",
+      "stat1": "De la Playa",
+      "stat2": "Pueblo Pescadores",
+      "review": "Ubicación excelente y confort inigualable. El personal es increíblemente atento."
+    },
+    "rooms": {
+      "tag": "Tu Hogar Lejos de Casa",
+      "title": "Nuestras",
+      "titleItalic": "Villas",
+      "desc": "Diseñadas con cariño y con todo lo necesario para que vuestra estancia sea perfecta.",
+      "viewDetails": "Ver Detalles y Precios",
+      "modalTitle": "Detalles del Alojamiento",
+      "description": "Descripción",
+      "amenities": "Comodidades y Servicios",
+      "bookThis": "Reservar este Alojamiento"
+    },
+    "services": {
+      "tag": "Comodidad y Atención",
+      "title": "Servicios",
+      "titleItalic": "Exclusivos",
+      "desc": "Nos esforzamos por ofrecerte todo lo necesario para que tu única preocupación sea disfrutar del sol y la playa.",
+      "viewAll": "Ver Todos los Servicios"
+    },
+    "gallery": {
+      "tag": "Momentos Las Palmas",
+      "title": "Nuestra",
+      "titleItalic": "Galería",
+      "viewMore": "Ver más fotos"
+    },
+    "location": {
+      "tag": "Dónde Estamos",
+      "title": "Ubicación",
+      "titleItalic": "Privilegiada",
+      "address": "Dirección",
+      "airport": "Aeropuerto",
+      "nearby": "Puntos Cercanos",
+      "beach": "A 2 min de Playa Punta Popy.",
+      "airportDesc": "El Catey (AZS) a solo 31 km. Ofrecemos servicio de traslado.",
+      "nearbyDesc": "Pueblo de los Pescadores (14 min caminando). Restaurantes y bares a pocos pasos."
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "desc": "¿Tienes alguna duda o quieres realizar una reserva directa? Estamos aquí para ayudarte a planear tus vacaciones perfectas.",
+      "phone": "Teléfono",
+      "email": "Email",
+      "location": "Ubicación",
+      "nameLabel": "Nombre Completo",
+      "namePlaceholder": "Tu nombre...",
+      "emailPlaceholder": "tu@email.com",
+      "messageLabel": "Mensaje",
+      "messagePlaceholder": "¿En qué podemos ayudarte?",
+      "send": "Enviar Mensaje"
+    },
+    "servicesList": [
+      { "name": "WiFi Gratis", "desc": "Conexión de alta velocidad en todo el recinto." },
+      { "name": "Parking Gratis", "desc": "Aparcamiento privado seguro para nuestros huéspedes." },
+      { "name": "Traslado Aeropuerto", "desc": "Servicio de enlace con el aeropuerto El Catey." },
+      { "name": "Habitaciones Familiares", "desc": "Espacios diseñados para el confort de todos." },
+      { "name": "Eco-Friendly", "desc": "Comprometidos con el medio ambiente y la sostenibilidad." },
+      { "name": "Alquiler de Bicicletas", "desc": "Explora Las Terrenas a tu propio ritmo." },
+      { "name": "Zona de Barbacoa", "desc": "Equipamiento completo para tus parrilladas." },
+      { "name": "Cafetera en Habitación", "desc": "Empieza el día con un buen café dominicano." }
+    ],
+"roomsList": [
+      {
+        "title": "Villa Premium",
+        "bed": "1 Cama King + 2 Camas individuales",
+        "size": "90 m2",
+        "description": "Nuestra villa premium cuenta con 2 dormitorios, uno con cama King y otro con 2 camas individuales. Dispone de salón-comedor con TV, cocina americana equipada y terraza privada con mobiliario exterior. El servicio de limpieza se presta dos veces por semana.",
+        "amenities": ["Ventiladores en todas las estancias", "Caja fuerte", "Terraza", "Zona de estar", "Armario", "Suelo de baldosa/mármol", "Muebles de exterior", "Mosquitera", "Acceso a pisos superiores sólo mediante escaleras", "Extintor de incendios", "Llave en mano", "Baño", "Ducha", "Toallas", "Artículos de baño gratis", "Bidé", "Aseos", "Productos de limpieza", "Jabón para el cuerpo", "Champú", "Papel higiénico", "Cunas (bajo demanda)", "Ropa de cama", "Sofá", "Zona de comedor", "Cocina americana", "Cocina", "Frigorífico", "Utensilios de cocina", "Hornillo", "TV de pantalla plana", "Enchufe cerca de cama"]
+      }
+    ],
+    "footer": {
+      "rights": "Todos los derechos reservados.",
+      "privacy": "Privacidad",
+      "terms": "Términos"
+    }
+  },
+  "en": {
+    "nav": {
+      "hotel": "The Hotel",
+      "rooms": "Accommodations",
+      "services": "Services",
+      "gallery": "Gallery",
+      "location": "Location",
+      "contact": "Contact",
+      "book": "Book",
+      "bookNow": "Book Now"
+    },
+    "hero": {
+      "welcome": "Welcome to Paradise in Las Terrenas",
+      "subtitle": "An ecological refuge just steps from Punta Popy Beach. Villas and apartments designed for your comfort and connection with nature.",
+      "viewRooms": "View Accommodations",
+      "discover": "Discover More"
+    },
+    "about": {
+      "title": "An Oasis of Peace in the",
+      "subtitle": "Heart of Samaná",
+      "p1": "Located in the vibrant area of Las Terrenas, Las Palmas Eco Residence is more than a hotel; it's a tropical living experience. Just a 2-minute walk from Punta Popy Beach, we offer a refuge where ecology and luxury meet.",
+      "p2": "Our facilities feature lush gardens, a quiet terrace, and barbecue areas designed to create unforgettable moments with family and friends.",
+      "p3": "With a 9.6 location score, we are situated in the best-rated area of Las Terrenas, close to everything yet secluded enough to guarantee your rest.",
+      "stat1": "From the Beach",
+      "stat2": "Fishermen's Village",
+      "review": "Excellent location and unmatched comfort. The staff is incredibly attentive."
+    },
+    "rooms": {
+      "tag": "Your Home Away From Home",
+      "title": "Our",
+      "titleItalic": "Accommodations",
+      "desc": "Designed with natural materials and equipped with everything necessary for a perfect stay.",
+      "viewDetails": "View Details & Prices",
+      "modalTitle": "Accommodation Details",
+      "description": "Description",
+      "amenities": "Amenities & Services",
+      "bookThis": "Book this Accommodation"
+    },
+    "services": {
+      "tag": "Comfort and Attention",
+      "title": "Exclusive",
+      "titleItalic": "Services",
+      "desc": "We strive to offer you everything you need so your only concern is enjoying the sun and the beach.",
+      "viewAll": "View All Services"
+    },
+    "gallery": {
+      "tag": "Las Palmas Moments",
+      "title": "Our",
+      "titleItalic": "Gallery",
+      "viewMore": "View more photos"
+    },
+    "location": {
+      "tag": "Where We Are",
+      "title": "Privileged",
+      "titleItalic": "Location",
+      "address": "Address",
+      "airport": "Airport",
+      "nearby": "Nearby Points",
+      "beach": "2 min from Punta Popy Beach.",
+      "airportDesc": "El Catey (AZS) just 31 km away. We offer transfer service.",
+      "nearbyDesc": "Fishermen's Village (14 min walk). Restaurants and bars just steps away."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "desc": "Do you have any questions or want to make a direct reservation? We are here to help you plan your perfect vacation.",
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Your name...",
+      "emailPlaceholder": "your@email.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "How can we help you?",
+      "send": "Send Message"
+    },
+    "servicesList": [
+      { "name": "Free WiFi", "desc": "High-speed connection throughout the premises." },
+      { "name": "Free Parking", "desc": "Secure private parking for our guests." },
+      { "name": "Airport Transfer", "desc": "Shuttle service to El Catey airport." },
+      { "name": "Family Rooms", "desc": "Spaces designed for everyone's comfort." },
+      { "name": "Eco-Friendly", "desc": "Committed to the environment and sustainability." },
+      { "name": "Bicycle Rental", "desc": "Explore Las Terrenas at your own pace." },
+      { "name": "BBQ Area", "desc": "Full equipment for your barbecues." },
+      { "name": "In-room Coffee Maker", "desc": "Start the day with good Dominican coffee." }
+    ],
+    "roomsList": [
+      {
+        "title": "Premium Villa",
+        "bed": "1 King bed + 2 Single beds",
+        "size": "90 m2",
+        "description": "Our premium villa features 2 bedrooms, one with a King bed and another with 2 single beds. It has a living-dining area with TV, a fully equipped kitchenette, and a private terrace with outdoor furniture. Cleaning service is provided twice a week.",
+        "amenities": ["Ventilators in all rooms", "Safe", "Terrace", "Living area", "Wardrobe", "Tile/marble floor", "Outdoor furniture", "Mosquito net", "Access to upper floors only by stairs", "Fire extinguisher", "Key access", "Bathroom", "Shower", "Towels", "Free toiletries", "Bidet", "Toilets", "Cleaning products", "Body soap", "Shampoo", "Toilet paper", "Cribs (on request)", "Bed linen", "Sofa", "Dining area", "Kitchenette", "Kitchen", "Refrigerator", "Kitchen utensils", "Stove", "Flat-screen TV", "Socket near bed"]
+      }
+    ],
+    "footer": {
+      "rights": "All rights reserved.",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
+  }
+}

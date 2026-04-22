@@ -1,0 +1,79 @@
+{
+  "site": {
+    "name": "Las Palmas",
+    "tagline": "Eco Residence",
+    "description": "Un refugio ecológico en Las Terrenas, República Dominicana"
+  },
+  "contact": {
+    "phone": "+1 809 240 6436",
+    "phoneRaw": "18092406436",
+    "email": "reservas@laspalmasresidence.com",
+    "address": "AV. Benelux 1, Las Terrenas 32200, Samaná, Republica Dominicana",
+    "coordinates": {
+      "lat": "19.322368",
+      "lng": "-69.5334814"
+    }
+  },
+  "social": {
+    "instagram": "#",
+    "facebook": "#",
+    "whatsapp": "#"
+  },
+  "ratings": {
+    "booking": {
+      "score": 9.2,
+      "maxScore": 10,
+      "source": "Booking.com Review"
+    }
+  },
+  "stats": {
+    "beachDistance": "2 min",
+    "villageDistance": "14 min"
+  },
+  "images": {
+    "hero": "https://las-palmas-residence.greaterantilleshotels.com/data/Images/1920x1080w/16527/1652756/1652756059/image-las-terrenas-las-palmas-eco-residence-2.JPEG",
+    "about": "https://las-palmas-residence.greaterantilleshotels.com/data/Images/1920x1080w/17187/1718780/1718780012/image-las-terrenas-las-palmas-eco-residence-45.JPEG",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.624400000803!2d-69.5334814!3d19.322368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaefa7f24e83a5b%3A0x1520153027dc5271!2sLas%20Palmas%20Eco%20Residence!5e0!3m2!1sen!2ses!4v1773423160837!5m2!1sen!2ses"
+  },
+  "roomImages": [
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17187/1718779/1718779652/image-las-terrenas-las-palmas-eco-residence-11.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17187/1718779/1718779882/image-las-terrenas-las-palmas-eco-residence-9.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17049/1704928/1704928590/image-las-terrenas-las-palmas-eco-residence-40.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17187/1718779/1718779770/image-las-terrenas-las-palmas-eco-residence-5.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17187/1718779/1718779822/image-las-terrenas-las-palmas-eco-residence-24.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/13356/1335616/1335616790/image-las-terrenas-las-palmas-eco-residence-48.JPEG"
+  ],
+  "galleryImages": [
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17187/1718779/1718779882/image-las-terrenas-las-palmas-eco-residence-9.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/13404/1340424/1340424905/image-las-terrenas-las-palmas-eco-residence-36.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/7095/709531/709531927/image-las-terrenas-las-palmas-eco-residence-70.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/16698/1669829/1669829423/image-las-terrenas-las-palmas-eco-residence-41.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/11986/1198655/1198655815/image-las-terrenas-las-palmas-eco-residence-84.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/7095/709531/709531411/image-las-terrenas-las-palmas-eco-residence-66.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17187/1718779/1718779770/image-las-terrenas-las-palmas-eco-residence-5.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17187/1718779/1718779652/image-las-terrenas-las-palmas-eco-residence-11.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17049/1704928/1704928590/image-las-terrenas-las-palmas-eco-residence-40.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/13356/1335616/1335616790/image-las-terrenas-las-palmas-eco-residence-48.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17394/1739408/1739408512/image-las-terrenas-las-palmas-eco-residence-31.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/7095/709531/709531096/image-las-terrenas-las-palmas-eco-residence-68.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/7095/709531/709531165/image-las-terrenas-las-palmas-eco-residence-69.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/12042/1204265/1204265638/image-las-terrenas-las-palmas-eco-residence-82.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/7095/709531/709531630/image-las-terrenas-las-palmas-eco-residence-54.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17187/1718779/1718779822/image-las-terrenas-las-palmas-eco-residence-24.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/16698/1669829/1669829426/image-las-terrenas-las-palmas-eco-residence-51.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17187/1718779/1718779803/image-las-terrenas-las-palmas-eco-residence-23.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17187/1718779/1718779863/image-las-terrenas-las-palmas-eco-residence-7.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/7095/709531/709531876/image-las-terrenas-las-palmas-eco-residence-57.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/7095/709531/709531744/image-las-terrenas-las-palmas-eco-residence-55.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/7095/709531/709531276/image-las-terrenas-las-palmas-eco-residence-60.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17187/1718779/1718779507/image-las-terrenas-las-palmas-eco-residence-8.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17187/1718779/1718779899/image-las-terrenas-las-palmas-eco-residence-12.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/17187/1718779/1718779611/image-las-terrenas-las-palmas-eco-residence-26.JPEG",
+    "https://las-palmas-residence.greaterantilleshotels.com/data/Images/450x450w/13308/1330807/1330807652/image-las-terrenas-las-palmas-eco-residence-15.JPEG"
+  ],
+  "airport": {
+    "code": "AZS",
+    "name": "El Catey",
+    "distance": "31 km"
+  }
+}
